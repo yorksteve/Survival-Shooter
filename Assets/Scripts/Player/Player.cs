@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
 
         var cameraRotation =  _mainCamera.transform.localEulerAngles;
         cameraRotation.x -= mouseY * _mouseSensitivity;
-        _mainCamera.transform.localRotation = Quaternion.AngleAxis(Mathf.Clamp(cameraRotation.x, 0, 15), Vector3.right);
+        _mainCamera.transform.localRotation = Quaternion.AngleAxis(Mathf.Clamp(cameraRotation.x, 0, 27), Vector3.right);
     }
 
     private void CalculateMovement()
